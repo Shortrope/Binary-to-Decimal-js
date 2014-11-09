@@ -1,0 +1,100 @@
+body {
+	background: #333;
+	font-family: sans-serif;
+	font-size: 14px;
+
+}
+#page {
+	background: #fff;
+	font-size: 1.4em;
+	margin: 0 auto;
+	padding: 1em;
+	width: 640px;
+}
+#options {
+	font-size: 1.1em;
+	margin-bottom: 1.5em;
+}
+select {
+	font-size: 1em;
+	padding: 0 .2em; 
+	width: 7.5em;
+}
+#qna {
+	border-top:1px solid #eee;
+	border-bottom: 1px solid #eee;
+	font-size: 1.5em;
+	margin: 0em auto;
+	text-align: center;
+}
+#qna > #binaryNum {
+	font-size: 2em;
+	margin: 0.25em 0;
+}
+#keyboardInput {
+	display: none;
+}
+#inputSelect {
+	cursor: pointer;
+	font-size: 0.4em;
+}
+#digit4 {
+	margin-right: 0.25em;
+}
+#answer {
+	font-size: .9em;
+	padding: 0 .2em; 
+	width: 3em;
+	vertical-align: top;
+}
+#submit {
+	font-size: .9em;
+	margin: 0 0.5em;
+	width: 3.4em;
+	vertical-align: top;
+}
+.btnAnswer {
+	font-size: 1em;
+	font-weight: bold;
+	padding: .1em;
+	width: 3em;
+}
+#qna form {
+	margin-bottom: 0.75em;
+}
+#inputSelect {
+	border: 1px solid #aaa;
+	margin: 0 auto 1em;
+	padding: 0.3em 0 0.1em 0;
+	width: 15em;
+}
+#review {
+	font-size: 0.5em;
+	visibility: hidden;
+}
+
+#stats > table {
+	margin: 1.5em auto;
+}
+th, td {
+	text-align: center;
+	width: 8em;
+	height: 2em;
+	outline: 1px solid #ccc;
+}
+#stats td.clearStats {
+	text-align: left;
+	outline: none;
+}
+#clearStats {
+	font-weight: bold;
+	height: 2.5em;
+	width: 7em;
+}
+
+footer {
+	border-top: 1px solid #ddd;
+	color: grey;
+	font-size: 0.75em;
+	margin: 4em 0 1em;
+}

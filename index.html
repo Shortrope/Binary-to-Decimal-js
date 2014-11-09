@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="us-en">
+<head>
+	<meta charset="utf-8">
+    <title>Binary to Decimal trainer</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="page">
+	<h1>Binary to Decimal Trainer</h1>
+
+	<form id="options">
+	Number of binary digits: 
+		<select id="numDigits">
+			<option id="2digits" value="2">2</option>
+			<option id="3digits" value="3">3</option>
+			<option id="4digits" value="4">4</option>
+			<option id="5digits" value="5">5</option>
+			<option id="6digits" value="6">6</option>
+			<option id="7digits" value="7">7</option>
+			<option id="8digits" value="8">8</option>
+			<option id="mask" value="8">Subnet Mask</option>
+		</select>
+		<!--
+		<p>Max Decimal Value: <span id="maxValue"></span></p>
+		-->
+	</form>
+
+	<div id="qna">
+		<p id="binaryNum">
+			<span id="digit1">0</span>
+			<span id="digit2">0</span>
+			<span id="digit3">0</span>
+			<span id="digit4">0</span>
+			<span id="digit5">0</span>
+			<span id="digit6">0</span>
+			<span id="digit7">0</span>
+			<span id="digit8">0</span>
+		</p>
+		<p id="answerButtons">
+			<input type="button" id="btnAnswer1" class="btnAnswer" value="answer1" />
+			<input type="button" id="btnAnswer2" class="btnAnswer" value="answer2" />
+			<input type="button" id="btnAnswer3" class="btnAnswer" value="answer3" />
+			<input type="button" id="btnAnswer4" class="btnAnswer" value="answer4" />
+		</p>
+		<form id="keyboardInput" onsubmit="javascript:enterSubmit(); return false;" >
+			<p>Decimal : <input type="text" id="answer" size="8" /><input id="submit" type="submit" value="Enter" /></p>
+		</form>
+		<p id="review"><span id="reviewBinary">00000000</span> = <span id="reviewCorrectAnswer">32</span><br />Your answer: <span id="reviewYourAnswer">22</span></p>
+		<p id="inputSelect">Switch to Keyboard Input</p>
+	</div> <!-- #qna -->
+
+	<div id="stats">
+
+		<table border="0">
+			<tr>
+
+				<th id="thCorrect">Correct</th>
+				<th id="thWrong">Error</th>
+				<th id="thScore">Score</th>
+			</tr>
+			<tr>
+				<td><span id="correct">0</span></td>
+				<td><span id="wrong">0</span></td>
+				<td><span id="score">0</span>%</td>
+			</tr>
+			<tr>
+				<td class="clearStats"><input id="clearStats" type="button" value="Clear Stats" /></td>
+			</tr>
+		</table>
+
+	</div>  <!-- #stats -->
+
+	<footer>
+		<p>Copyright &copy; 2013 Shortrope.com </p>
+	</footer>
+</div> <!-- #page -->
+
+<script type="text/javascript" src="binToDecimal.js"></script>
+</body>
+</html>
+
